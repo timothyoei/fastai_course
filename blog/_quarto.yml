@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Home"
+  navbar:
+    right:
+      - about.qmd
+      - blog.qmd
+      - icon: github
+        href: https://github.com/timothyoei
+      - icon: linkedin
+        href: https://www.linkedin.com/in/timothy-oei
+      - icon: twitter
+        href: https://twitter.com/oei_timothy
+        
+format:
+  html:
+    theme: slate
+    css: styles.css

@@ -1,0 +1,17 @@
+version: "3"
+services:
+  fastai:
+    environment:
+      - VSCODE_REMOTE_USER=user
+    build:
+      context: .
+    volumes:
+      - .:/playground
+    networks:
+      - fastai_playground
+    ports:
+      - "8888:8888"
+    tty: true
+networks:
+  fastai_playground:
+    driver: bridge
